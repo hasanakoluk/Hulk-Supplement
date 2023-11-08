@@ -1,0 +1,721 @@
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    .container{
+        width: 70%;
+        margin: auto;
+        border: 1px solid rgb(168, 240, 25);
+    }
+    
+
+    .top-Header{
+        display: flex;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgb(168, 240, 25);
+    background-color: rgb(168, 240, 25) ;
+    color: black;
+    padding: 1px;
+    font-family: 'Playpen Sans', cursive;
+    font-size: 14px;
+    opacity:initial;
+    text-shadow: white;
+    }
+
+    .top-Header h2{
+    margin-left: 20px;
+    }
+    .top-Header img{
+        margin-top: 3px;
+        margin-left: 10px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+
+    .search{
+        display: flex;
+        align-items: center;
+        justify-content:flex-end;
+        width: 100%;
+    }
+    .search input{
+        height: 25px;
+        margin-right: 10px;
+    }
+
+    .bottom-header-container{
+    display: flex;
+        width: 100%;
+        height: 500px;
+    }
+    .pages{
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+        font-family: 'Playpen Sans', cursive;
+        border: 2px solid black;
+        border-radius: 0px 0px 5px 5px;
+        background-color: rgb(34, 34, 34);
+        width: 100%;
+        height: 50px;
+        
+    }
+
+    .pages a{
+        text-decoration: none;
+        color:rgb(168, 240, 25);
+        transition: 0.5s;
+    }
+
+    .pages a:hover{
+        text-decoration: none;
+        color:rgb(168, 240, 25);
+        border: 1px solid rgb(168, 240, 25);
+        border-radius: 8px;
+    }
+
+    .bottom-header-container {
+        padding: 50px;
+    }
+
+    .bottom-header-container ul{
+        list-style-type: none;
+        font-size:35px;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin: auto;
+        line-height: 80px;
+        font-family: 'Playpen Sans', cursive;
+        border: 2px solid black;
+        border-radius: 10px;
+        border-style: none;
+    }
+
+    .bottom-header-container ul::first-line{
+        color: rgb(168, 240, 25);
+
+    }
+
+    .bottom-Header-image{
+        width: 500px;
+        height: 400px;
+    background-image: url(./progainer.jpg);
+    background-size: 100% 100%; 
+    background-color: white;
+    }
+
+    .products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-size: 100% 100%;
+        justify-content: space-between;
+        gap: 35px;
+    }
+
+    .products img{
+        width: 250px;
+        height: 250px;
+        border: 1px solid rgb(168, 240, 25);
+        border-radius: 10px;
+        object-position: center;
+        object-fit:cover;
+    }
+
+    .products span{
+        display:flex;
+        font-size: 14px;
+        font-weight:inherit;
+        width: 50px;
+        height: 20px;
+    }
+
+    .products button{
+    display: flex;
+        margin: auto;
+        width: 70px;
+        height: 30px;
+        align-items: center;
+        padding-left: 10px;
+        font-weight: bold;
+        font-family: 'Playpen Sans', cursive;
+        background-color: rgb(168, 240, 25);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .container-footer{
+        display: flex;
+    width: 100%;
+    height: 300px;
+    border: 1px solid rgb(168, 240, 25);
+    border-radius: 8px 8px 0px 0px ;
+    margin-top: 30px;
+    background-color: rgb(168, 240, 25);
+    
+    }
+
+    .categorys{
+        width: 300px;
+        height: 35px;
+        text-align: center;
+        padding-top: 15px;
+        font-weight: bold;
+        font-family: 'Playpen Sans', cursive;
+        font-size: 20px;
+    }
+    .categorys ul{
+        list-style-type: none;
+        line-height: 25px;
+        cursor: pointer;
+        margin-top: 8px;
+    }
+    .categorys h2{
+        color: black;
+        padding: 5px;
+    }
+
+    .adress{
+        
+        align-items: start;
+        text-align: center;
+        margin: 25px 15px 15px 15px;
+        line-height: 35px;
+        font-weight: bold;
+        font-family: 'Playpen Sans', cursive;
+        font-size: 20px;
+    }
+    .adress h2{
+        color: black;
+    }
+
+    .adress ul{
+        list-style-type: none;
+        margin-top: 15px;
+    }
+
+    .form-container{
+        margin: auto;
+        line-height: 50px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .form-container input{
+        border-color: black;
+        border-radius: 10px;
+        padding: 4px;
+        width: 200px;
+    }
+
+    .form-container button{
+        width: 70px;
+        height: 30px;
+        font-weight: bold;
+        font-family: 'Playpen Sans', cursive;
+        background-color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .form-container h2{
+        color:black;
+    }
+    @media(max-width:553px){
+        .adress{
+            display: none;
+        
+        }
+    }
+
+    @media(max-width:986px){
+        .search{
+            display: flex;
+            align-items: center;
+            justify-content:flex-end;
+            width: 80%;
+        }
+        .search input{
+            height: 25px;
+            margin-right: 15px;
+        }
+        .bottom-header-container ul{
+            list-style-type: none;
+            font-size:25px;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            margin: auto;
+            line-height: 80px;
+            font-family: 'Playpen Sans', cursive;
+            border: 2px solid black;
+            border-radius: 10px;
+            border-style: none;
+        }
+        .bottom-Header-image{
+            width: 400px;
+            height: 320px;
+        background-image: url(./progainer.jpg);
+        background-size: 100% 100%; 
+        background-color: white;
+        margin-top: 25px;
+        }
+        .categorys{
+            width: 200px;
+            height: 25px;
+            text-align: center;
+            padding-top: 15px;
+            font-weight: bold;
+            font-family: 'Playpen Sans', cursive;
+        }
+        .categorys ul{
+        font-size: 13px;
+        }
+        .adress{
+            line-height: 25px;
+            font-size: 13px;
+        }
+        .form-container{
+            height: 85%;
+            display: block;
+            flex-direction: column;
+        align-items: flex-start;
+            line-height: 40px;       
+        }
+        .form-container input{
+        width:80%;
+            
+        }
+
+    }
+
+    @media (max-width:786px){
+        .search{
+            display: none;
+        }
+        .search input{
+        display: none;
+        }
+        .top-Header h2{
+            width: 100%;
+            text-align: end;
+            margin-right: 25px;
+        }
+        .products{
+            justify-content: center;
+        }
+        .bottom-header-container ul{
+            line-height: 50px; 
+
+        }
+        
+    }
+
+    @media(max-width:685px){
+        .form-container{
+            display: none;    
+        }
+        .form-container input{
+        display: none;
+        }
+    }
+
+    @media(max-width:510px){
+        .bottom-Header-image{
+            display: none;
+        }
+    }
+    @media(max-width:414px){
+        .adress{
+        display: none;
+        
+        }
+        .categorys{
+        width: 100%;
+        text-align: center;
+        }
+        .top-Header h2{
+        height: 100px; 
+            margin-top: 5px;
+            font-size: 16px;
+        }
+        .pages a{
+            font-size: 13px;
+        }
+        .products{
+            justify-content: center;
+        }
+    }
+
+    @media(max-width:280px){
+        .top-Header h2{
+            margin-left: 7px;
+            font-size: 12px;
+            margin-top: 5px;
+            
+        }
+        .top-Header img{
+            margin-top: 3px;
+            margin-left: 5px;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+        }
+        .pages a{
+            font-size: 10px;
+            justify-content: space-between;
+        }
+        .bottom-header-container ul{
+            font-size:18px;
+            text-align: center;
+        }
+        .products{
+        
+            background-size: 100% 100%;
+            
+            gap: 35px;
+        }
+        
+        .products img{
+            width: 150px;
+            height: 150px;
+        }
+        
+        .products span{
+            display:flex;
+            font-size: 10px;
+            font-weight:inherit;
+            width: 50px;
+            height: 20px;
+        }
+        
+        .products button{
+        display: flex;
+            width: 55px;
+            height: 25px;
+            font-size: 10px;
+        }
+    }
+
+                      /* ÜRÜNLER SAYFASI */
+
+    .urunler-container{
+        width: 100%;
+        margin: auto;
+    }
+    .amino{
+        display: flex;
+        width: 100%;
+    
+    }
+    .amino img{
+        
+        width: 400px;
+        height: 300px;
+        object-fit: cover;
+    
+    }
+    .amino p{
+        
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+        width: 700px;
+        height: 400px ;
+        font-family: 'Playpen Sans', cursive;
+    }
+    .amino2{
+        display: flex;
+        width: 100%;
+    margin-left: 10%;
+    }
+    .amino2 img{
+        
+        width: 400px;
+        height: 300px;
+        object-fit: contain;
+    
+    }
+    .amino2 p{
+        
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+        width: 700px;
+        height: 300px ;
+        font-family: 'Playpen Sans', cursive;
+    }
+
+    .glutamine{
+        display: flex;
+        width: 100%;
+    margin-top: 6%;
+    
+    }
+    .glutamine img{
+        
+        width: 450px;
+        height: 450px;
+        object-fit:cover;
+    
+
+    }
+    .glutamine p{
+        overflow: auto;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+        width: 50%;
+        height: 400px ;
+        font-family: 'Playpen Sans', cursive;
+        margin:auto;
+    }
+
+    ::-webkit-scrollbar{
+        background: white;
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb{
+    background: rgb(168, 240, 25);
+    border: 1px solid black;
+    border-radius: 5px;
+    }
+
+    @media(max-width: 1320px){
+        .urunler-container p{
+        font-size: 14px;
+        width: 200px;
+        overflow: auto;
+        width: 100%;
+        }
+        
+    }
+
+    @media(max-width: 986px){
+        .urunler-container {
+            display: block;
+            
+        }
+        .urunler-container p{
+        height: 500px;
+        overflow: auto;
+        }
+    }
+    @media(max-width: 912px){
+        .urunler-container{
+            width: 100%;
+        }
+        .urunler-container img:nth-child(1) {
+            width: 350px;
+            height: 500px;
+            object-fit: cover;
+        }
+        .urunler-container img:nth-child(2) {
+            width: 350px;
+            height: 350px;
+            object-fit: contain;
+            width: 100%;
+            margin-right: 25px;
+            margin-top: 35px;
+        }
+        
+        .urunler-container p:nth-child(2) {
+            object-fit: contain;
+            overflow: auto;
+        }
+        .amino{
+            margin-bottom: 30px;  
+        }   
+    }
+    @media(max-width: 860px){
+        .urunler-container {
+            display: block;
+            margin: auto;
+            gap: 150px;
+        }
+        .urunler-container p{
+        height: 500px;
+        overflow: auto;
+        }
+    }
+    @media(max-width: 500px){
+        .urunler-container{
+            width: 100%;
+            
+        }
+        .urunler-container img:nth-child(1) {
+            width: 300px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .urunler-container img:nth-child(2) {
+            width: 300px;
+            height: 130px;
+            object-fit: contain;
+            width: 100%;
+            margin-right: 25px;
+            margin-top: 5px;
+        }
+        
+        .urunler-container p{
+        height: 150px;
+        }
+        .bottom-header-container {
+            height: 350px;
+        }
+        .categorys{
+            width: 100%;
+        }
+    }
+
+                /* ÜRÜNLER SAYFASI BİTİŞ */
+
+                
+                /* HAKKIMIZDA SAYFASI */
+
+        .hakkimizda-container{
+            display: inline-block;
+            width: 100%;
+            height: 80vh; 
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 40px;  
+            font-family: 'Playpen Sans', cursive;
+            color:rgb(209, 235, 149);
+            background-image: url(./crossfit2.jpg);
+            background-position: center;
+            background-size: 100% 100%;
+            text-align: center;
+            padding-top: 50px ;
+        } 
+        .hakkimizda-container p{
+            backdrop-filter: blur(2px);
+        }
+        @media(max-width: 1080px){
+            .hakkimizda-container{
+                font-size: 14px;
+            }
+        }
+        @media(max-width: 760px){
+            .hakkimizda-container p{
+                line-height: 30px;
+            }
+        }
+        @media(max-width: 580px){
+            .hakkimizda-container p{
+                line-height: 25px;
+
+            }
+        }
+        @media(max-width: 375px){
+            .hakkimizda-container p{
+                line-height: 15px;
+                font-size: 10px;
+            }
+            .bottom-header-container{
+                 height: 320px;
+            }
+        }
+        
+                      
+                    /* HAKKIMIZDA SAYFASI BİTİŞ */
+
+                
+                    /*İLETİŞİM SAYFASI*/
+                   
+    .iletisim-container{
+       display: flex;
+       justify-content: flex-start;
+       padding-left: 10%;
+       align-items: center;
+        width: 100%;
+        font-size: 15px;
+        width: 60%;
+        height: 300px;
+        border: 1px solid rgb(168, 240, 25);
+        border-radius: 10px;
+        margin: auto;
+    } 
+    .iletisim-container label{
+        display: block;
+       justify-content: flex-end;
+       padding: 5px;
+       font-family: 'Playpen Sans', cursive;
+    } 
+    
+    .iletisim-container label[for="bay"]{
+        display: inline;
+    }
+    .iletisim-container label[for="bayan"]{
+        display: inline;
+    }
+    .iletisim-container input[type="submit"]{
+        display: block;
+        margin-top: 10px;
+        width: 80px;
+        height: 30px;
+        border: none;
+        border-radius: 10px;
+        background-color: rgb(209, 235, 149);
+        cursor: pointer;
+    }
+    .iletisim-container input{
+        font-size: 20px;
+    }
+    .uyeOl{
+        text-align: center;
+        background-color: rgb(209, 235, 149);
+        margin-bottom: 20px;
+        font-family: 'Playpen Sans', cursive;
+    }
+
+    @media( max-width: 750px ){
+        .iletisim-container input{
+            font-size: 15px;
+        }
+    }
+    @media( max-width: 590px ){
+        .iletisim-container input{
+            font-size: 10px;
+        }
+    }
+    @media( max-width: 414px ){
+        .iletisim-container input{
+            font-size: 8px;
+        }
+        .iletisim-container label[for="bay"]{
+           font-size: 10px;
+        }
+        .iletisim-container label[for="bayan"]{
+            font-size: 10px;
+        }
+    }
+    @media( max-width: 280px ){
+        .iletisim-container input{
+            font-size: 5px;
+        }
+        .iletisim-container label[for="bay"]{
+           font-size: 5px;
+        }
+        .iletisim-container label[for="bayan"]{
+            font-size: 5px;
+        }
+        .iletisim-container input[type="submit"]{
+            width: 80px;
+            height: 20px;
+        }
+    }
+    
+                         /*İLETİŞİM SAYFASI BİTİŞ*/
+        
+
+      
+       
